@@ -1,0 +1,2 @@
+import './polyfills.server.mjs';
+import{a}from"./chunk-NBMVJN6D.mjs";import{x as s}from"./chunk-JOHBUDQX.mjs";import{f as r}from"./chunk-M3IHTRDF.mjs";function f(e,t){return r(this,null,function*(){let n=new URL(e.url);console.log("render SSR",n.href);let c=new URL("/",n),o=yield t.ASSETS.fetch(new Request(c)),i=yield o.text(),l=yield s(a,{document:i,url:n.pathname});return new Response(l,o)})}var h={fetch:(e,t)=>globalThis.__zone_symbol__Promise.resolve(f(e,t))};export{h as default};
